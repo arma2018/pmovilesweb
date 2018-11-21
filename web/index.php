@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
 <?php
     //Codigo utilizado para heroku aplicaciones moviles.
     $host = 'us-cdbr-iron-east-01.cleardb.net';
