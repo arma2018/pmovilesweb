@@ -29,6 +29,7 @@
             
             $peticion = $conexion->prepare("insert into datos('nombre','motivo','direccion','telc','telm','correo','lugaro','lugard','fechas','fechad','descripcion',) values ('$nombre','$tipo','$direccion','$telc','$telm','$correo','$lugaro','$lugard','$fechas','$fechad','$descripcion')");
             $peticion->execute();
+            echo "registro exitoso";
         }
         
     } catch (PDOException $e) {
