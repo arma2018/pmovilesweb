@@ -16,7 +16,7 @@
             $peticion->execute();$datos = $peticion->fetchAll();
             $filas;
             foreach ($datos as $row){
-                $filas[] = array($row[1],$row[2],$row[3],$row[4],$row[5],$row[6],$row[7],$row[8],$row[9],$row[10],$row[11],);
+                $filas[] = array($row[1],$row[2],$row[3],$row[4],$row[5],$row[6],$row[7],$row[8],$row[9],$row[10],$row[11]);
             }
             echo "<table class='col-sm-12 col-md-12 col-lg-12 col-xl-12 table table-bordered table-responsive'>
                 <thead>
