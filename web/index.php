@@ -54,7 +54,7 @@
             }
             echo "</tbody></table>";
             echo "<script>
-                    setTimeout(function(){windows.location.reload();},5000);
+                    setTimeout(function(){window.location.reload();},5000);
                     </script>";
         }
         
