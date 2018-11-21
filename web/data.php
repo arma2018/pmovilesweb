@@ -27,14 +27,8 @@
             $descripcion = $data[10];
             
             
-            $peticion = $conexion->prepare("call reg_pac('$nombre','$tipo','$direccion','$telc','$telm','$correo','$lugaro','$lugard','$fechas','$fechad','$descripcion')");
-            $peticion->execute();$peticion = $conexion->prepare("select @result as resultado");$peticion->execute();
-            $respuesta = $peticion->fetch();
-            if ($respuesta[0]==0) {
-                echo "Ocurrio un error al registrar.";
-            }else if($respuesta[0]==1){
-                echo "Registro exitoso.";
-            }
+            $peticion = $conexion->prepare("insert into datos('nombre','motivo','direccion','telc','telm','correo','lugaro','lugard','fechas','fechad','descripcion',) values ('$nombre','$tipo','$direccion','$telc','$telm','$correo','$lugaro','$lugard','$fechas','$fechad','$descripcion')");
+            $peticion->execute();
         }
         
     } catch (PDOException $e) {
