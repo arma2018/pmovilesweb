@@ -21,8 +21,8 @@
             echo "<table class='col-sm-12 col-md-12 col-lg-12 col-xl-12 table table-bordered table-responsive'>
                 <thead>
                     <tr>
-                        <th>No. ticket</th>
                         <th>Nombre</th>
+                        <th>Tipo</th>
                         <th>Dirección</th>
                         <th>Telefono casa</th>
                         <th>Telefono Movil</th>
@@ -37,17 +37,17 @@
                 <tbody>";
             for ($i=0; $i <count($filas); ; $i++) { 
                 echo "<tr>
-                    <td>".$filas[$i][1]."<td>
-                    <td>".$filas[$i][2]."<td>
-                    <td>".$filas[$i][3]."<td>
-                    <td>".$filas[$i][4]."<td>
-                    <td>".$filas[$i][5]."<td>
-                    <td>".$filas[$i][6]."<td>
-                    <td>".$filas[$i][7]."<td>
-                    <td>".$filas[$i][8]."<td>
-                    <td>".$filas[$i][9]."<td>
-                    <td>".$filas[$i][10]."<td>
-                    <td>".$filas[$i][11]."<td>
+                    <td>".$filas[$i][0]."</td>
+                    <td>".$filas[$i][1]."</td>
+                    <td>".$filas[$i][2]."</td>
+                    <td>".$filas[$i][3]."</td>
+                    <td>".$filas[$i][4]."</td>
+                    <td>".$filas[$i][5]."</td>
+                    <td>".$filas[$i][6]."</td>
+                    <td>".$filas[$i][7]."</td>
+                    <td>".$filas[$i][8]."</td>
+                    <td>".$filas[$i][9]."</td>
+                    <td>".$filas[$i][10]."</td>
                     </tr>";
                 # code...
             }
