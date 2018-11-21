@@ -35,7 +35,7 @@
                     </tr>
                 </thead>
                 <tbody>";
-            for ($i=0; $i < $filas.count(); ; $i++) { 
+            for ($i=0; $i <count($filas); ; $i++) { 
                 echo "<tr>
                     <td>".$filas[$i][1]."<td>
                     <td>".$filas[$i][2]."<td>
